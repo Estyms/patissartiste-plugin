@@ -82,14 +82,14 @@ publishing {
 
 	publications {
 		maven(MavenPublication) {
-			groupId = group as Publication
-			artifactId = archivesBaseName as Publication
-			version = version as Publication
+			groupId = group
+			artifactId = archivesBaseName
+			version = version
 			from components.java
 
 			pom {
-				name = "Ile des Artistes" as Publication
-				description = "Un plugin minecraft pour le serveur de l'Ile des Artistes" as Publication
+				name = "Ile des Artistes"
+				description = "Un plugin minecraft pour le serveur de l'Ile des Artistes"
 			}
 		}
 	}

@@ -25,6 +25,10 @@ repositories {
 		name = "Modrinth"
 		url = "https://api.modrinth.com/maven"
 	}
+	maven {
+		name = "Evann Regnault's Nexus"
+		url = "https://nexus.evannregnault.dev/repository/maven-releases"
+	}
 }
 
 dependencies {
@@ -36,9 +40,11 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "maven.modrinth:fallingtree:1.19.3-3.11.2"
 	modImplementation "eu.pb4:polymer-core:0.3.13+1.19.3"
 	modImplementation "fr.catcore:server-translations-api:1.4.19+1.19.3"
+	modImplementation "maven.modrinth:fallingtree:1.19.3-3.11.2"
+
+	modLocalRuntime("de.siphalor:nbtcrafting:2.2.3+mc1.19.3")
 
 
 	// Uncomment the following line to enable the deprecated Fabric API modules. 
@@ -73,17 +79,28 @@ jar {
 
 // configure the maven publication
 publishing {
+
 	publications {
-		mavenJava(MavenPublication) {
+		maven(MavenPublication) {
+			groupId = group as Publication
+			artifactId = archivesBaseName as Publication
+			version = version as Publication
 			from components.java
+
+			pom {
+				name = "Ile des Artistes" as Publication
+				description = "Un plugin minecraft pour le serveur de l'Ile des Artistes" as Publication
+			}
 		}
 	}
 
-	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
-		// Add repositories to publish to here.
-		// Notice: This block does NOT have the same function as the block in the top level.
-		// The repositories here will be used for publishing your artifact, not for
-		// retrieving dependencies.
+		maven {
+			credentials {
+				username="$repoUser"
+				password="$repoPassword"
+			}
+			url = "https://nexus.evannregnault.dev/repository/maven-releases"
+		}
 	}
 }

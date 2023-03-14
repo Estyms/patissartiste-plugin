@@ -22,11 +22,13 @@ public class IleDesArtistes implements ModInitializer {
 
 		if (FabricLoader.getInstance().isModLoaded("fallingtree")) {
 			FallingTreeLoader.InitFallingTree();
+		} else {
+			LOGGER.info("Fallingtree mod not found, you night want to install it to enable the timber enchantment");
 		}
 
 		InitEnchantments();
 
 
-		LOGGER.info("Mod has successfully Loaded");
+		LOGGER.info("IDA successfully Loaded");
 	}
 }

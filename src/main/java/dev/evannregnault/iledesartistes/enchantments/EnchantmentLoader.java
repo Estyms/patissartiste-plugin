@@ -10,6 +10,6 @@ public class EnchantmentLoader {
     public static Enchantment FIREPROOF = new Fireproof();
 
     public static void InitEnchantments() {
-        Registry.register(Registries.ENCHANTMENT, new Identifier("iledesartistes", "fireproof"), FIREPROOF);
+        Registry.register(Registries.ENCHANTMENT, new Identifier("moreenchantments", "fireproof"), FIREPROOF);
     }
 }

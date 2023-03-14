@@ -1,7 +1,7 @@
 {
   "type": "nbtcrafting:smithing",
   "base": {
-    "item": "minecraft:book"
+    "item": "minecraft:enchanted_book"
   },
   "ingredient": {
     "item": "minecraft:netherite_ingot"
@@ -9,7 +9,12 @@
   "result": {
     "item": "minecraft:enchanted_book",
     "data": {
-      "$": "$ base",
+      "$": {
+        "value": "base",
+        "paths": {
+          "/StoredEnchantments\\[\\d+\\]/": "append"
+        }
+      },
       "StoredEnchantments": [{
         "id": "moreenchantments:fireproof",
         "lvl": 1

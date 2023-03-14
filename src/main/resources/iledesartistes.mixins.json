@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.evannregnault.iledesartistes.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "IDABlock",
+    "IDABlockEntity",
+    "IDAShulkerBoxBlock",
+    "IDAItemEntity"
+  ],
+  "server": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

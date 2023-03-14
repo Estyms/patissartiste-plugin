@@ -1,0 +1,19 @@
+{
+  "type": "nbtcrafting:smithing",
+  "base": {
+    "item": "minecraft:book"
+  },
+  "ingredient": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "result": {
+    "item": "minecraft:enchanted_book",
+    "data": {
+      "$": "$ base",
+      "StoredEnchantments": [{
+        "id": "iledesartistes:fireproof",
+        "lvl": 1
+      }]
+    }
+  }
+}

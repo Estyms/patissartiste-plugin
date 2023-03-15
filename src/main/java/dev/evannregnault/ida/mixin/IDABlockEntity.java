@@ -1,6 +1,6 @@
-package dev.evannregnault.iledesartistes.mixin;
+package dev.evannregnault.ida.mixin;
 
-import dev.evannregnault.iledesartistes.interfaces.IEnchantmentBlockEntity;
+import dev.evannregnault.ida.interfaces.IEnchantmentBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;

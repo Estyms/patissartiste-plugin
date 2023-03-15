@@ -1,4 +1,4 @@
-package dev.evannregnault.iledesartistes.interfaces;
+package dev.evannregnault.ida.interfaces;
 
 import net.minecraft.enchantment.Enchantment;
 

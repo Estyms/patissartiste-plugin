@@ -1,4 +1,4 @@
-package dev.evannregnault.iledesartistes.enchantments;
+package dev.evannregnault.ida.enchantments;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.registry.Registries;
@@ -10,6 +10,6 @@ public class EnchantmentLoader {
     public static Enchantment FIREPROOF = new Fireproof();
 
     public static void InitEnchantments() {
-        Registry.register(Registries.ENCHANTMENT, new Identifier("moreenchantments", "fireproof"), FIREPROOF);
+        Registry.register(Registries.ENCHANTMENT, new Identifier("ida", "fireproof"), FIREPROOF);
     }
 }

@@ -1,6 +1,6 @@
-package dev.evannregnault.iledesartistes.mixin;
+package dev.evannregnault.ida.mixin;
 
-import dev.evannregnault.iledesartistes.enchantments.EnchantmentLoader;
+import dev.evannregnault.ida.enchantments.EnchantmentLoader;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.ItemStack;

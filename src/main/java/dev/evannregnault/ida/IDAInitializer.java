@@ -1,14 +1,14 @@
-package dev.evannregnault.iledesartistes;
+package dev.evannregnault.ida;
 
-import dev.evannregnault.iledesartistes.loaders.FallingTreeLoader;
+import dev.evannregnault.ida.loaders.FallingTreeLoader;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static dev.evannregnault.iledesartistes.enchantments.EnchantmentLoader.InitEnchantments;
+import static dev.evannregnault.ida.enchantments.EnchantmentLoader.InitEnchantments;
 
-public class IleDesArtistes implements ModInitializer {
+public class IDAInitializer implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.

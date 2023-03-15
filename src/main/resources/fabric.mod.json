@@ -18,11 +18,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "dev.evannregnault.iledesartistes.IleDesArtistes"
+      "dev.evannregnault.ida.IDAInitializer"
     ]
   },
   "mixins": [
-    "iledesartistes.mixins.json"
+    "ida.mixins.json"
   ],
 
   "depends": {

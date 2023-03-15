@@ -18,7 +18,7 @@ import java.util.Collection;
 public class FallingTreeLoader {
     public static void InitFallingTree() {
         Logger logger = LoggerFactory.getLogger("Ile des Artistes");
-        Registry.register(Registries.ENCHANTMENT, new Identifier("moreenchantments", "timber"), EnchantmentLoader.TIMBER);
+        Registry.register(Registries.ENCHANTMENT, new Identifier("ida", "timber"), EnchantmentLoader.TIMBER);
 
         try {
             // Set custom Enchantment

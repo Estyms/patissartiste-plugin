@@ -25,10 +25,6 @@ repositories {
 		name = "Modrinth"
 		url = "https://api.modrinth.com/maven"
 	}
-	maven {
-		name = "Evann Regnault's Nexus"
-		url = "https://nexus.evannregnault.dev/repository/maven-releases"
-	}
 }
 
 dependencies {
@@ -43,8 +39,6 @@ dependencies {
 	modImplementation "eu.pb4:polymer-core:0.3.13+1.19.3"
 	modImplementation "fr.catcore:server-translations-api:1.4.19+1.19.3"
 	modImplementation "maven.modrinth:fallingtree:1.19.3-3.11.2"
-
-	modLocalRuntime("de.siphalor:nbtcrafting:2.2.3+mc1.19.3")
 
 
 	// Uncomment the following line to enable the deprecated Fabric API modules. 

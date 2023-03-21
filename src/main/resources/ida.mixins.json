@@ -6,8 +6,9 @@
   "mixins": [
     "IDABlock",
     "IDABlockEntity",
-    "IDAShulkerBoxBlock",
-    "IDAItemEntity"
+    "IDAItemEntity",
+    "IDARecipeManager",
+    "IDAShulkerBoxBlock"
   ],
   "server": [
   ],

@@ -1,6 +1,7 @@
 package dev.evannregnault.ida;
 
 import dev.evannregnault.ida.loaders.FallingTreeLoader;
+import io.wispforest.owo.config.annotation.Config;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
@@ -13,6 +14,8 @@ public class IDAInitializer implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger("Ile des Artistes");
+
+	public static final dev.evannregnault.ida.IDAConfig CONFIG = dev.evannregnault.ida.IDAConfig.createAndLoad();
 
 	@Override
 	public void onInitialize() {

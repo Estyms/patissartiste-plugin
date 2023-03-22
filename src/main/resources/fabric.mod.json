@@ -30,7 +30,7 @@
     "fabric-api": "*",
     "minecraft": "~1.19.4",
     "java": ">=17",
-    "nbtcrafting": ">=2.2.3"
+    "nbtcrafting": ">=2.2.4"
   },
   "suggests": {
     "fallingtree": "*"

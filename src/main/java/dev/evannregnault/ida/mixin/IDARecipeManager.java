@@ -21,5 +21,7 @@ public class IDARecipeManager {
     public void apply(Map<Identifier, JsonElement> map, ResourceManager resourceManager, Profiler profiler, CallbackInfo ci) {
         map.put(new Identifier("ida","fireproof_book"), RecipeGenerator.FIREPROOF_RECIPE);
         map.put(new Identifier("ida","fireproof_book2"), RecipeGenerator.FIREPROOF_BOOK_RECIPE);
+        if (RecipeGenerator.FIREPROOF_RECIPE_1_20 != null) map.put(new Identifier("ida", "fireproof_book_1_20"), RecipeGenerator.FIREPROOF_RECIPE_1_20);
+        if (RecipeGenerator.FIREPROOF_BOOK_RECIPE_1_20 != null) map.put(new Identifier("ida", "fireproof_book2_1_20"), RecipeGenerator.FIREPROOF_BOOK_RECIPE_1_20);
     }
 }

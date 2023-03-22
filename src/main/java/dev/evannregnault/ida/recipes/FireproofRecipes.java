@@ -4,6 +4,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import dev.evannregnault.ida.IDAInitializer;
 import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.item.Items;
 import org.jetbrains.annotations.NotNull;
 
 public class FireproofRecipes {
@@ -27,7 +28,6 @@ public class FireproofRecipes {
             bookData.add("$", dollarData);
         }
 
-
         JsonArray storedEnchantments = new JsonArray();
         JsonObject fireproofEnchantment = new JsonObject();
         fireproofEnchantment.addProperty("id", "ida:fireproof");
@@ -38,6 +38,55 @@ public class FireproofRecipes {
 
         return result;
     }
+
+    public static JsonObject FireproofBookRecipe1_20() {
+
+        if (IDAInitializer.CONFIG.FireproofAnvilRecipe()) return null;
+
+        JsonObject fireproofRecipe = new JsonObject();
+
+        JsonObject base = new JsonObject();
+        base.addProperty("item", "minecraft:enchanted_book");
+
+        JsonObject ingredient = new JsonObject();
+        ingredient.addProperty("item", "minecraft:netherite_ingot");
+
+        JsonObject template = new JsonObject();
+        template.addProperty("item", "minecraft:netherite_upgrade_smithing_template");
+
+        fireproofRecipe.addProperty("type", "nbtcrafting:smithing_transform");
+        fireproofRecipe.add("base", base);
+        fireproofRecipe.add("addition", ingredient);
+        fireproofRecipe.add("template", template);
+        fireproofRecipe.add("result", generateFireproofBookJson(true));
+
+        return fireproofRecipe;
+    }
+
+    public static JsonObject FireproofRecipe1_20() {
+
+        if (IDAInitializer.CONFIG.FireproofAnvilRecipe()) return null;
+
+        JsonObject fireproofRecipe = new JsonObject();
+
+        JsonObject base = new JsonObject();
+        base.addProperty("item", "minecraft:book");
+
+        JsonObject ingredient = new JsonObject();
+        ingredient.addProperty("item", "minecraft:netherite_ingot");
+
+        JsonObject template = new JsonObject();
+        template.addProperty("item", "minecraft:netherite_upgrade_smithing_template");
+
+        fireproofRecipe.addProperty("type", "nbtcrafting:smithing_transform");
+        fireproofRecipe.add("base", base);
+        fireproofRecipe.add("addition", ingredient);
+        fireproofRecipe.add("template", template);
+        fireproofRecipe.add("result", generateFireproofBookJson());
+
+        return fireproofRecipe;
+    }
+
 
 
     public static JsonObject FireproofRecipe() {
@@ -76,9 +125,9 @@ public class FireproofRecipes {
             fireproofRecipe.add("ingredient", ingredient);
             fireproofRecipe.add("result", result);
         } else {
-            fireproofRecipe.addProperty("type", "minecraft:smithing");
+            fireproofRecipe.addProperty("type", "nbtcrafting:smithing");
             fireproofRecipe.add("base", base);
-            fireproofRecipe.add("addition", ingredient);
+            fireproofRecipe.add("ingredient", ingredient);
             fireproofRecipe.add("result", result);
         }
 

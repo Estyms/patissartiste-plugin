@@ -9,4 +9,7 @@ import java.util.function.Consumer;
 public class RecipeGenerator  {
     public static JsonObject FIREPROOF_RECIPE = FireproofRecipes.FireproofRecipe();
     public static JsonObject FIREPROOF_BOOK_RECIPE = FireproofRecipes.FireproofBookRecipe();
+
+    public static JsonObject FIREPROOF_RECIPE_1_20 = FireproofRecipes.FireproofRecipe1_20();
+    public static JsonObject FIREPROOF_BOOK_RECIPE_1_20 = FireproofRecipes.FireproofBookRecipe1_20();
 }

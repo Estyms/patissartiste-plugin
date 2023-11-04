@@ -1,6 +1,6 @@
-package dev.evannregnault.ida.mixin;
+package dev.evannregnault.patissartiste.mixin;
 
-import dev.evannregnault.ida.enchantments.EnchantmentLoader;
+import dev.evannregnault.patissartiste.enchantments.EnchantmentLoader;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.item.ItemStack;
@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(ItemEntity.class)
-public abstract class IDAItemEntity {
+public abstract class PAItemEntity {
     @Shadow public abstract ItemStack getStack();
 
     @Inject(method = "isFireImmune", at = @At("HEAD"), cancellable = true)

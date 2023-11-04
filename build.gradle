@@ -39,9 +39,9 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	annotationProcessor modImplementation("io.wispforest:owo-lib:${project.owo_version}")
 
-	modImplementation "eu.pb4:polymer-core:0.4.0+1.19.4"
-	modImplementation "xyz.nucleoid:server-translations-api:2.0.0-beta.2+1.19.4-pre2"
-	modCompileOnly "maven.modrinth:fallingtree:1.19.4-3.12.1"
+	modImplementation "eu.pb4:polymer-core:0.6.2+1.20.2"
+	modImplementation "xyz.nucleoid:server-translations-api:2.1.0+1.20.2-rc2"
+	modCompileOnly "maven.modrinth:fallingtree:1.20.2-5.0.3"
 
 
 	// Uncomment the following line to enable the deprecated Fabric API modules. 
@@ -88,16 +88,6 @@ publishing {
 				name = "Ile des Artistes"
 				description = "Un plugin minecraft pour le serveur de l'Ile des Artistes"
 			}
-		}
-	}
-
-	repositories {
-		maven {
-			credentials {
-				username="$repoUser"
-				password="$repoPassword"
-			}
-			url = "https://nexus.evannregnault.dev/repository/maven-releases"
 		}
 	}
 }

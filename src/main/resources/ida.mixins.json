@@ -1,14 +1,15 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "dev.evannregnault.ida.mixin",
+  "package": "dev.evannregnault.patissartiste.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
-    "IDABlock",
-    "IDABlockEntity",
-    "IDAItemEntity",
-    "IDARecipeManager",
-    "IDAShulkerBoxBlock"
+    "PABlock",
+    "PABlockEntity",
+    "PAItemEntity",
+    "PAShulkerBoxBlock",
+    "network.PASynchronizeRecipes",
+    "screen.PAScreenHandler"
   ],
   "server": [
   ],

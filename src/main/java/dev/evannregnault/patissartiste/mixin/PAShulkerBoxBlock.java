@@ -1,6 +1,6 @@
-package dev.evannregnault.ida.mixin;
+package dev.evannregnault.patissartiste.mixin;
 
-import dev.evannregnault.ida.interfaces.IEnchantmentBlockEntity;
+import dev.evannregnault.patissartiste.interfaces.IEnchantmentBlockEntity;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.ShulkerBoxBlock;
 import net.minecraft.block.entity.BlockEntity;
@@ -19,7 +19,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 @Mixin(ShulkerBoxBlock.class)
-public class IDAShulkerBoxBlock {
+public class PAShulkerBoxBlock {
     @Inject(method = "onPlaced", at = @At(value = "HEAD"))
     public void onPlace(World world, BlockPos pos, BlockState state, LivingEntity placer, ItemStack itemStack, CallbackInfo ci) {
         BlockEntity blockEntity = world.getBlockEntity(pos);

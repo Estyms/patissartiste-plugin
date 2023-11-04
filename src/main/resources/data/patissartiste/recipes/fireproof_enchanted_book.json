@@ -1,0 +1,17 @@
+{
+  "type": "patissartiste:enchantment_smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "minecraft:enchanted_book"
+  },
+  "result": {
+    "item": "minecraft:enchanted_book"
+  },
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "enchantment_level": 1,
+  "enchantment": "ida:fireproof"
+}

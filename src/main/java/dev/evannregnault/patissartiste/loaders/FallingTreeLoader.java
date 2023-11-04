@@ -1,6 +1,6 @@
-package dev.evannregnault.ida.loaders;
+package dev.evannregnault.patissartiste.loaders;
 
-import dev.evannregnault.ida.enchantments.EnchantmentLoader;
+import dev.evannregnault.patissartiste.enchantments.EnchantmentLoader;
 import fr.rakambda.fallingtree.common.config.real.EnchantmentConfiguration;
 import fr.rakambda.fallingtree.common.wrapper.IEnchantment;
 import fr.rakambda.fallingtree.fabric.FallingTree;
@@ -17,7 +17,7 @@ import java.util.Collection;
 
 public class FallingTreeLoader {
     public static void InitFallingTree() {
-        Logger logger = LoggerFactory.getLogger("Ile des Artistes");
+        Logger logger = LoggerFactory.getLogger("Patiss'artiste");
         Registry.register(Registries.ENCHANTMENT, new Identifier("moreenchantments", "timber"), EnchantmentLoader.TIMBER);
 
         try {

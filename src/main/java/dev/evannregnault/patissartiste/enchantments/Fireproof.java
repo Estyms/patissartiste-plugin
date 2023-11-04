@@ -1,4 +1,4 @@
-package dev.evannregnault.ida.enchantments;
+package dev.evannregnault.patissartiste.enchantments;
 
 import eu.pb4.polymer.core.api.other.PolymerEnchantment;
 import net.minecraft.enchantment.Enchantment;

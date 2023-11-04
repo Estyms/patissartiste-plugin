@@ -1,4 +1,4 @@
-package dev.evannregnault.ida.enchantments;
+package dev.evannregnault.patissartiste.enchantments;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.registry.Registries;
@@ -10,6 +10,7 @@ public class EnchantmentLoader {
     public static Enchantment FIREPROOF = new Fireproof();
 
     public static void InitEnchantments() {
+        // For Legacy Purposes it isn't patissartiste
         Registry.register(Registries.ENCHANTMENT, new Identifier("ida", "fireproof"), FIREPROOF);
     }
 }

@@ -1,11 +1,9 @@
-package dev.evannregnault.ida.enchantments;
+package dev.evannregnault.patissartiste.enchantments;
 
 import eu.pb4.polymer.core.api.other.PolymerEnchantment;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ItemStack;
 

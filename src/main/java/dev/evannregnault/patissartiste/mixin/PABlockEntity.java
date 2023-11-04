@@ -1,6 +1,6 @@
-package dev.evannregnault.ida.mixin;
+package dev.evannregnault.patissartiste.mixin;
 
-import dev.evannregnault.ida.interfaces.IEnchantmentBlockEntity;
+import dev.evannregnault.patissartiste.interfaces.IEnchantmentBlockEntity;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Mixin(BlockEntity.class)
-public class IDABlockEntity implements IEnchantmentBlockEntity {
+public class PABlockEntity implements IEnchantmentBlockEntity {
     Map<Enchantment, Integer> enchantments;
 
     public void setEnchantments(Map<Enchantment, Integer> enchantments) {

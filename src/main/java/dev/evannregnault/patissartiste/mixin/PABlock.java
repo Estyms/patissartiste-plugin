@@ -1,7 +1,7 @@
-package dev.evannregnault.ida.mixin;
+package dev.evannregnault.patissartiste.mixin;
 
 
-import dev.evannregnault.ida.interfaces.IEnchantmentBlockEntity;
+import dev.evannregnault.patissartiste.interfaces.IEnchantmentBlockEntity;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -28,7 +28,7 @@ import static net.minecraft.block.Block.dropStack;
 import static net.minecraft.block.Block.getDroppedStacks;
 
 @Mixin(Block.class)
-public abstract class IDABlock {
+public abstract class PABlock {
 
     private static Item[] getAllShulkers() {
         return new Item[]{

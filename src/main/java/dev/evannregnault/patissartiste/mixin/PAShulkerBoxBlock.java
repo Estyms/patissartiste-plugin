@@ -16,6 +16,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
 
 @Mixin(ShulkerBoxBlock.class)
@@ -28,7 +29,7 @@ public class PAShulkerBoxBlock {
     }
 
     @Inject(method = "onBreak", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/World;spawnEntity(Lnet/minecraft/entity/Entity;)Z"), locals = LocalCapture.CAPTURE_FAILHARD)
-    public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player, CallbackInfo ci, BlockEntity blockEntity, ShulkerBoxBlockEntity shulkerBoxBlockEntity, ItemStack itemStack, ItemEntity itemEntity) {
+    public void onBreak(World world, BlockPos pos, BlockState state, PlayerEntity player, CallbackInfoReturnable<BlockState> cir, BlockEntity blockEntity, ShulkerBoxBlockEntity shulkerBoxBlockEntity, ItemStack itemStack, ItemEntity itemEntity) {
         if (((IEnchantmentBlockEntity)shulkerBoxBlockEntity).getEnchantments() != null) {
             EnchantmentHelper.set(((IEnchantmentBlockEntity) shulkerBoxBlockEntity).getEnchantments(), itemStack);
             itemEntity.setStack(itemStack);

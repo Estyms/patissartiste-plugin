@@ -146,7 +146,7 @@ public class EnchantmentSmithingRecipe implements SmithingRecipe, ServerRecipe {
                     return recipe.enchantment;
                 }), Codec.INT.fieldOf("enchantment_level").forGetter((recipe) -> {
                     return recipe.enchantmentLevel;
-                }), RecipeCodecs.CRAFTING_RESULT.fieldOf("result").forGetter((recipe) -> {
+                }), ItemStack.RECIPE_RESULT_CODEC.fieldOf("result").forGetter((recipe) -> {
                     return recipe.result;
                 })).apply(instance, EnchantmentSmithingRecipe::new);
             });

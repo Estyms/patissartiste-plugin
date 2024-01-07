@@ -39,9 +39,9 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 	annotationProcessor modImplementation("io.wispforest:owo-lib:${project.owo_version}")
 
-	modImplementation "eu.pb4:polymer-core:0.6.2+1.20.2"
-	modImplementation "xyz.nucleoid:server-translations-api:2.1.0+1.20.2-rc2"
-	modCompileOnly "maven.modrinth:fallingtree:1.20.2-5.0.3"
+	modImplementation "eu.pb4:polymer-core:0.7.4+1.20.4"
+	modImplementation "xyz.nucleoid:server-translations-api:2.2.0+1.20.3-rc1"
+	modCompileOnly "maven.modrinth:fallingtree:1.20.4-1.20.4.3"
 
 
 	// Uncomment the following line to enable the deprecated Fabric API modules. 

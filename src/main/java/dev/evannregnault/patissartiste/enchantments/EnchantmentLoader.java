@@ -10,7 +10,7 @@ public class EnchantmentLoader {
     public static Enchantment FIREPROOF = new Fireproof();
 
     public static void InitEnchantments() {
-        // For Legacy Purposes it isn't patissartiste
+        Registry.register(Registries.ENCHANTMENT, new Identifier("moreenchantments", "timber"), EnchantmentLoader.TIMBER);
         Registry.register(Registries.ENCHANTMENT, new Identifier("ida", "fireproof"), FIREPROOF);
     }
 }
